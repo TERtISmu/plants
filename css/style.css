@@ -1,0 +1,557 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* inika-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inika-v21-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/inika-v21-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: normal;
+    color: #636060;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1220px;
+    margin: 0 auto; 
+}
+
+/* Header start */
+
+.header{
+    background: #EDF2EC;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;  
+    justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.header_logo{
+    padding: 14px 0 19px 21px;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item{
+    margin-right: 46px;
+}
+
+.header_item:last-child{
+    margin-right: 0;
+}
+
+.header_link{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;;
+    text-decoration: none;
+    color: #010201;
+}
+
+.header_link.header_home{
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #E06733;
+}
+
+
+/* Header end */
+
+/* Intro start */
+
+.intro{
+    background-color: #EDF2EC;;
+}
+
+.intro_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.leafs{
+    width: 449px;
+    height: 407px;
+    background: url(../img/leafs.svg);
+    margin: 62px 0 63px 0;
+}
+
+.welcome_title{
+    margin-top: 98px;
+    margin-bottom: 42px ;
+    max-width: 549px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+}
+
+.title_plants{
+    color: #499A18;
+}
+
+.welcome_subtitle{
+    max-width: 525px;
+    margin-bottom: 48px;
+}
+
+.learn_more_intro{
+    padding: 14px 27px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    background: #EDF2EC;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+}
+
+
+/* Intro end */
+
+/* About styles start */
+
+.about{
+    background-color: #FFFFFF;
+}
+
+.about_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 93px 0;
+}
+
+.about_title{
+    font-family: 'Inika';
+    max-width: 463px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin-top: 68px;
+    margin-bottom: 40px;
+}
+
+.title_1{
+    color: #E06733;
+}
+
+.about_subtitle{
+    max-width: 605px;
+    margin-bottom: 61px;
+}
+
+.about_picture{
+    background-image: url(../img/svg/houseplant1.svg);
+    width: 464px;
+    height: 479px;
+}
+
+/* About styles end */
+
+/* Services styles start */
+
+.service{
+    background-color: #EDF2EC;
+    /* height: 100vh; */
+}
+
+.secvices_content{
+    display: flex;
+    justify-content: space-between;   
+    max-width: 1007px;
+    padding-top: 40px;
+    margin-bottom: 90px;
+}
+
+.service_title{
+    max-width: 306px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.service_buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+    max-width: 559px;
+    max-height: 50px;
+    margin-bottom: 15px;
+}
+
+.service_button{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #E06733;
+}
+
+.service_button1{
+    padding: 12px 40px;
+    margin-right: 38px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.service_button2{
+    padding: 12px 54px;
+    margin-right: 38px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.service_button3{
+    padding: 12px 40px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.services_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 55px 117px;
+    padding-bottom: 120px;
+}
+
+.services_card{
+    border: 1px solid #E3E1D5;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.services_card1{
+    background: url(../img/garden_care.jpg) no-repeat;
+}
+
+.services_card2{
+    background: url(../img/planting.jpg) no-repeat;
+}
+
+.services_card3{
+    background: url(../img/lawn_care.jpg) no-repeat;
+}
+
+.services_card4{
+    background: url(../img/planting2.jpg) no-repeat;
+}
+
+.services_card5{
+    background: url(../img/garden_care2.jpg) no-repeat;
+}
+
+.services_card6{
+    background: url(../img/planting3.jpg) no-repeat;
+}
+
+.services_card-pic{
+    width: 329px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+.services_card-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    margin: 0 105px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.services_card-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    white-space: nowrap;
+    margin: 0 32px 36px 31px;
+}
+
+/* Services styles end */
+
+/* Prices styles start */
+
+.prices{
+    background-color: #FFFFFF;
+}
+
+.prices_wrapper{
+    position: relative;
+    margin-top: 40px;  
+    height: 405px;  
+    margin-bottom: 115px;
+}
+
+.call_us{
+    position: absolute;
+    max-width: 454px;
+    top: 0;
+    right: 0;
+}
+
+.call_us-title{
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #000;
+    margin-bottom: 38px;
+}
+
+.call_us-title_word{
+    color: #499A18;
+}
+
+.call_us-button{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    color: #E06733;
+    padding: 12px 34px 12px 30px;
+    background: #FFFFFF;
+    margin-left: 290px;
+}
+
+.call_us-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 152px;
+    height: 174.99px;
+}
+
+.prices-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.prices_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 332px;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    padding: 34px 41px;
+}
+
+.price_item{
+    background: #EDF2EC;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 40px;
+}
+
+.price_button{
+    width: 170px;
+    font-weight: 700;
+    color: #000000;
+    background: url(../img/svg/accordion_btn.svg) no-repeat right center;
+    padding: 0;
+    text-indent: -100px;
+    border: 0px;
+}
+
+/* Prices styles end */
+
+/* Contacts styles start */
+
+.contacts{
+    background: #EDF2EC;
+}
+
+.wrapper_contacts{
+    text-align: center;
+    position: relative;
+}
+
+.contacts_woman{
+    background: url(../img/svg/contact_woman.svg);
+    width: 400px;
+    height: 496.99px;
+    margin-top: -67px;
+}
+
+.contacts_title{
+    display: inline-block;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin-top: 60px;
+}
+
+.contacts_container{
+    position: absolute;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    width: 450px;
+    height: 50px;
+    top: 148px;
+    right: 0;
+}
+
+.contacts_city{
+    width: 395px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    border: 0px;
+    background: #D6E7D2;
+    padding: 5px 191px 5px 0;
+    text-indent: -165px;
+    background: url(../img/svg/ellipse_contacts.svg) no-repeat center right;
+}
+/* Contacts styles end */
+
+/* Footer styles start */
+
+.footer{
+    background: #FFFFFF;
+}
+
+.footer_content{
+    padding: 40px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.c_letter{
+    height: 50px;
+    width: 19px;
+    margin-right: 20px;
+}
+
+.footer_year{
+    margin-right: 20px;
+}
+
+.footer_data{
+    display: inline-block;
+    max-width: 182px;
+    margin-right: 337px;
+}
+
+.footer_RS{
+    display: inline-block;
+    width: 211px;
+    margin-right: 290px;
+}
+
+.footer_social_list{
+    position: relative;
+    display: inline-block;
+    padding-top: 25px;
+    min-width: 188px;
+    height: 50px;   
+}
+
+.soical_media_container{
+    display: flex;
+}
+
+.inst{
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    background: url(../img/svg/inst.svg) no-repeat center;
+}
+
+.facebook{
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    background: url(../img/svg/facebook.svg) no-repeat center;
+}
+
+.twitter{
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    background: url(../img/svg/twitter.svg) no-repeat center;
+}
+
+.pinterest{
+    width: 32px;
+    height: 32px;
+    background: url(../img/svg/pinterest.svg) no-repeat center;
+}
+
+/* Footer styles end */
